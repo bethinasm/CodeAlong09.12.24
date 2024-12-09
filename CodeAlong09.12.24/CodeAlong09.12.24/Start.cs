@@ -22,9 +22,10 @@ namespace CodeAlong09._12._24
 
         public void Greeting(Animal animal1, Animal animal2, Animal animal3)
         {
-            Console.WriteLine($"{animal1.returnSound()}");
-            Console.WriteLine($"{animal2.returnSound()}"); 
-            Console.WriteLine($"{animal3.returnSound()}");
+            Console.WriteLine($"{animal1.ReturnSound()}");
+            Console.WriteLine($"{animal2.ReturnSound()}"); 
+            Console.WriteLine($"{animal3.ReturnSound()}");
+            Console.WriteLine();
         }
 
         public void Menu(Animal animal1, Animal animal2, Animal animal3)
@@ -33,7 +34,7 @@ namespace CodeAlong09._12._24
 
             while (isRunning)
             {
-                Console.WriteLine("What animal would you like to talk to? \n[1] Cat \n[2] Dog \n[3] Cow \n[4] Exit program");
+                Console.WriteLine("What animal would you like to talk to? \n[1] Cat \n[2] Dog \n[3] Cow \n[4] Exit program \n\n");
 
                 var userInput = Console.ReadLine();
 
@@ -41,24 +42,30 @@ namespace CodeAlong09._12._24
                 {
                     case "1":
                         Console.Clear();
-                        Console.WriteLine($"{animal1.returnType()} says {animal1.returnSound()}!");
+                        Console.WriteLine($"{animal1.ReturnType()} says {animal1.ReturnSound()}!\n");
+                        Thread.Sleep(1000);
                         break;
                     case "2":
                         Console.Clear();
-                        Console.WriteLine($"{animal2.returnType()} says {animal2.returnSound()}!");
+                        Console.WriteLine($"{animal2.ReturnType()} says {animal2.ReturnSound()}!\n");
+                        Thread.Sleep(1000);
                         break;
                     case "3":
                         Console.Clear();
-                        Console.WriteLine($"{animal3.returnType()} says {animal3.returnSound()}!");
+                        Console.WriteLine($"{animal3.ReturnType()} says {animal3.ReturnSound()}!\n");
+                        Thread.Sleep(1000);
                         break;
                     case "4":
                         Console.Clear();
+                        Console.WriteLine("The program will now shut down.");
                         isRunning = false;
+                        Thread.Sleep(1000);
                         Environment.Exit(0);
                         break;
                     default:
                         Console.Clear();
                         Console.WriteLine("Not a valid input, try again.");
+                        Thread.Sleep(1000);
                         break;
                 }
             }

@@ -19,12 +19,12 @@ namespace CodeAlong09._12._24
             Sound = sound;
         }
 
-        public string returnType()
+        public string ReturnType()
         {
             return Type;
         }
 
-        public string returnSound()
+        public string ReturnSound()
         {
             return Sound;
         }

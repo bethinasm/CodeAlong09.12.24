@@ -1,5 +1,5 @@
 ﻿using CodeAlong09._12._24;
-Console.WriteLine("CODE ALONG 09.12.24");
+Console.WriteLine("CODE ALONG 09.12.24 \n");
 /*
     Lag en konsollapp med noen dyr på en bondegård.
 
