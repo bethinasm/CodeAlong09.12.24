@@ -13,5 +13,5 @@ Console.WriteLine("CODE ALONG 09.12.24");
     Brukeren skal kunne legge til flere dyr og hvilken lyd de lager
  */
 
-var Start = new Start();
-Start.Run();
+var start = new Start();
+start.Run();
