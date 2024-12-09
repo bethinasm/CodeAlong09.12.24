@@ -1,6 +1,4 @@
-﻿
-using CodeAlong09._12._24;
-
+﻿using CodeAlong09._12._24;
 Console.WriteLine("CODE ALONG 09.12.24");
 /*
     Lag en konsollapp med noen dyr på en bondegård.
